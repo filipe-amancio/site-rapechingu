@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rapé Xingu | O Rapé do Índio — Ervas naturais, tradição indígena</title>
+<meta name="description" content="Rapé Xingu — linha completa de rapés artesanais com ervas naturais e a linha refrescante Zero Grau. Tradição indígena, aroma autêntico. Produto para maiores de 18 anos." />
+<meta name="theme-color" content="#170e09" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=%2224%22 height=%2224%22 rx=%225%22 fill=%22%23170e09%22/><path d=%22M12 4l2.4 6.2L20 12l-5.6 1.8L12 20l-2.4-6.2L4 12l5.6-1.8z%22 fill=%22%2300d9a8%22/></svg>" />
+</head>
+<body>
+
+<!-- ===================== AGE GATE ===================== -->
+<div class="age-gate" id="ageGate">
+  <div class="age-card">
+    <span class="badge18">18+</span>
+    <h2>Confirme sua idade</h2>
+    <p>Este site apresenta produtos que contêm tabaco. O acesso é restrito a maiores de 18 anos.</p>
+    <div class="age-actions">
+      <button class="btn btn-primary" id="ageConfirm">Tenho 18 anos ou mais</button>
+    </div>
+    <a href="https://www.gov.br/pt-br" class="age-deny" id="ageDeny">Sou menor de 18 anos — sair do site</a>
+  </div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="#topo" class="logo" aria-label="Rapé Xingu — início">
+      <img class="mark" src="assets/img/brand/logo-mark.png" alt="" />
+      <span class="logo-text">Rapé Xingu<span>O Rapé do Índio</span></span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#produtos">Produtos</a>
+      <a href="#zerograu">Zero Grau</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#historia">História</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn" id="cartToggle" aria-label="Abrir carrinho" aria-haspopup="dialog" aria-controls="cartDrawer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2l2.4 12.1a2 2 0 002 1.6h8.4a2 2 0 002-1.6L21 7H6"/></svg>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </button>
+      <a class="btn btn-primary" href="https://wa.me/5561981304906" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.1-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.63-1.28 1.2-1.77 1.24-.45.05-1.02.07-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.92-2.2.24-.26.53-.32.7-.32.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.44-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.16.26.7 1.16 1.51 1.88 1.04.93 1.91 1.22 2.17 1.36.26.13.42.11.57-.07.16-.18.66-.77.84-1.03.18-.26.35-.22.6-.13.24.09 1.54.73 1.8.86.27.13.45.2.51.31.07.11.07.65-.15 1.28z"/></svg>
+        WhatsApp
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#produtos">Produtos</a></li>
+    <li><a href="#zerograu">Zero Grau</a></li>
+    <li><a href="#diferenciais">Diferenciais</a></li>
+    <li><a href="#historia">História</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a class="btn btn-primary" href="https://wa.me/5561981304906" target="_blank" rel="noopener">Fale no WhatsApp</a>
+</div>
+
+<main id="topo">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy" data-reveal>
+        <span class="eyebrow">Tradição indígena · Ervas naturais</span>
+        <h1>Rapé <em>Xingu</em></h1>
+        <p class="lead">Uma linha completa de rapés artesanais, feitos com ervas selecionadas e o aroma autêntico da floresta — da receita tradicional forte à experiência gelada da linha Zero Grau.</p>
+        <div class="hero-actions">
+          <a href="#produtos" class="btn btn-primary">Ver catálogo completo</a>
+          <a href="https://wa.me/5561981304906" target="_blank" rel="noopener" class="btn btn-outline">Fale no WhatsApp</a>
+        </div>
+        <div class="hero-flags">
+          <span class="flag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c4 3 6 6 6 10a6 6 0 01-12 0c0-4 2-7 6-10z"/></svg>100% ervas naturais</span>
+          <span class="flag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Receita artesanal</span>
+          <span class="flag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l6-16 6 16M6 15h8"/></svg>Origem indígena</span>
+        </div>
+        <span class="age-pill">18+ &nbsp;PROIBIDO PARA MENORES DE 18 ANOS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>100% Natural</span><span>Feito à Mão</span><span>Tradição Indígena</span><span>Ervas Selecionadas</span><span>Aroma Autêntico</span>
+      <span>100% Natural</span><span>Feito à Mão</span><span>Tradição Indígena</span><span>Ervas Selecionadas</span><span>Aroma Autêntico</span>
+    </div>
+  </div>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Por que Rapé Xingu</span>
+        <h2>Feito com respeito à floresta e à tradição</h2>
+        <p>Cada lata carrega uma combinação de ervas escolhida com cuidado — sem pressa, do jeito que se aprende com quem veio antes.</p>
+      </div>
+
+      <div class="dif-grid">
+        <div class="dif-card" data-reveal>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c5 3 7 7 7 11a7 7 0 01-14 0c0-4 2-8 7-11z"/><path d="M12 8v13"/></svg>
+          <h3>Ingredientes naturais</h3>
+          <p>Cacau, cravo, canela, alecrim, imburana, café e outras ervas escolhidas por suas propriedades e aroma.</p>
+        </div>
+        <div class="dif-card" data-reveal>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l7-15 3 6 3-3 3 12"/><circle cx="18" cy="6" r="1.6"/></svg>
+          <h3>Receita artesanal</h3>
+          <p>Produção em pequenos lotes, seguindo um processo tradicional passado de geração em geração.</p>
+        </div>
+        <div class="dif-card" data-reveal>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"/></svg>
+          <h3>Origem indígena</h3>
+          <p>Uma prática ancestral que carrega cultura, respeito à natureza e conexão com a floresta.</p>
+        </div>
+        <div class="dif-card" data-reveal>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16M10 4v16"/></svg>
+          <h3>Variedade de aromas</h3>
+          <p>Da linha clássica com tabaco à linha sem tabaco e à refrescância gelada da Zero Grau — são 20 opções.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUTOS — RAPÉ XINGU ===================== -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Linha Rapé Xingu</span>
+        <h2>Catálogo completo</h2>
+        <p>Dez sabores tradicionais com tabaco e uma versão 100% livre de tabaco, à base de imburana.</p>
+      </div>
+
+      <div class="line-tabs" role="tablist" aria-label="Filtrar catálogo">
+        <button class="line-tab active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+        <button class="line-tab" data-filter="tabaco" role="tab" aria-selected="false">Contém tabaco</button>
+        <button class="line-tab" data-filter="sem-tabaco" role="tab" aria-selected="false">Sem tabaco</button>
+      </div>
+
+      <p class="unit-note" data-reveal>Vendemos por <strong>tubo com 12 latinhas</strong> — a quantidade abaixo é o número de tubos, não de latinhas avulsas.</p>
+
+      <div class="product-grid" id="productGrid">
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Morango" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/morango.png" alt="Rapé Xingu Morango" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Morango</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Laranja" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/laranja.png" alt="Rapé Xingu Laranja" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Laranja</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Royal Cacau" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/royal-cacau.png" alt="Rapé Xingu Royal Cacau" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Royal Cacau</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Pai Vinícius" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/pai-vinicius.png" alt="Super Rapé Pai Vinícius" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Pai Vinícius</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Imburana da Mata" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/imburana-da-mata.png" alt="Rapé Xingu Imburana da Mata" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Imburana da Mata</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="sem-tabaco" data-name="Imburana Pura" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/imburana-pura.png" alt="Rapé Xingu Imburana Pura, sem tabaco" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Imburana Pura</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Cravo" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/cravo.png" alt="Rapé Xingu Cravo" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Cravo</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Tradicional da Aldeia" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/tradicional-aldeia.png" alt="Rapé Xingu Tradicional da Aldeia" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Tradicional da Aldeia</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Alecrim" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/alecrim.png" alt="Rapé Xingu Alecrim" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Alecrim</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Café" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/cafe.png" alt="Rapé Xingu Café" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Café</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Puro Tabaco" data-line="Rapé Xingu" data-price="22" data-reveal>
+          <img src="assets/img/produtos/puro-tabaco.png" alt="Rapé Xingu Puro Tabaco" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Puro Tabaco</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ZERO GRAU ===================== -->
+  <section class="zerograu" id="zerograu">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Linha Zero Grau</span>
+        <h2>Refrescância na veia</h2>
+        <p>Nove variações mentoladas para quem busca uma sensação gelada e intensa — do mentol puro aos sabores frutados.</p>
+      </div>
+
+      <p class="unit-note" data-reveal>Vendemos por <strong>tubo com 12 latinhas</strong> — a quantidade abaixo é o número de tubos, não de latinhas avulsas.</p>
+
+      <div class="product-grid">
+
+        <article class="product-card shop-item" data-name="Vick Ouro" data-line="Zero Grau" data-price="25" data-reveal>
+          <img src="assets/img/zerograu/zg-vick-ouro.png" alt="Zero Grau Vick Ouro" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Vick Ouro</span>
+              <span class="shop-price">R$ 25 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-name="Super Vick" data-line="Zero Grau" data-price="22" data-reveal>
+          <img src="assets/img/zerograu/zg-super-vick.png" alt="Zero Grau Super Vick" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Super Vick</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-name="Puro Vick" data-line="Zero Grau" data-price="22" data-reveal>
+          <img src="assets/img/zerograu/zg-puro-vick.png" alt="Zero Grau Puro Vick" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Puro Vick</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-name="Canela c/ Menta" data-line="Zero Grau" data-price="22" data-reveal>
+          <img src="assets/img/zerograu/zg-canela-menta.png" alt="Zero Grau Canela com Menta" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Canela c/ Menta</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-name="Super Chiclete" data-line="Zero Grau" data-price="22" data-reveal>
+          <img src="assets/img/zerograu/zg-super-chiclete.png" alt="Zero Grau Super Chiclete" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Super Chiclete</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-name="Super Eucalipto" data-line="Zero Grau" data-price="22" data-reveal>
+          <img src="assets/img/zerograu/zg-super-eucalipto.png" alt="Zero Grau Super Eucalipto" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Super Eucalipto</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-name="Morango c/ Menta" data-line="Zero Grau" data-price="22" data-reveal>
+          <img src="assets/img/zerograu/zg-morango-menta.png" alt="Zero Grau Morango com Menta" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Morango c/ Menta</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-name="Pura Menta" data-line="Zero Grau" data-price="22" data-reveal>
+          <img src="assets/img/zerograu/zg-pura-menta.png" alt="Zero Grau Pura Menta" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Pura Menta</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-name="Super Mentolado" data-line="Zero Grau" data-price="22" data-reveal>
+          <img src="assets/img/zerograu/zg-super-mentolado.png" alt="Zero Grau Super Mentolado" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Super Mentolado</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HISTORIA ===================== -->
+  <section class="historia" id="historia">
+    <div class="container historia-grid">
+      <div class="historia-media" data-reveal>
+        <img src="assets/img/brand/historia-ervas.png" alt="Ervas e especiarias naturais usadas no Rapé Xingu" loading="lazy" />
+      </div>
+      <div class="historia-copy" data-reveal>
+        <span class="eyebrow">Nossa origem</span>
+        <h2>Uma tradição que atravessa gerações</h2>
+        <p>O rapé é uma prática ancestral dos povos indígenas, usada há séculos como parte de rituais e do cotidiano. O Rapé Xingu nasce dessa herança: uma receita que respeita o tempo da floresta e o conhecimento de quem aprendeu a combinar ervas, raízes e aromas muito antes de qualquer rótulo existir.</p>
+        <p>Hoje, cada lata leva esse cuidado adiante — combinando ingredientes naturais selecionados com um processo artesanal, para manter viva uma cultura que é, antes de tudo, uma forma de conexão com a natureza.</p>
+        <div class="historia-stats">
+          <div><strong>20</strong><span>Sabores no catálogo</span></div>
+          <div><strong>100%</strong><span>Ervas naturais</span></div>
+          <div><strong>10g</strong><span>Por lata</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AVISO ===================== -->
+  <section class="aviso">
+    <div class="container">
+      <div class="aviso-box" data-reveal>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9L2.5 17.5A1.5 1.5 0 003.8 20h16.4a1.5 1.5 0 001.3-2.5L13.7 3.9a1.5 1.5 0 00-2.6 0z"/></svg>
+        <div>
+          <h3>Uso consciente e responsável</h3>
+          <p>Venda proibida para menores de 18 anos. A maior parte dos sabores desta linha contém tabaco — a exceção é a Imburana Pura. Consulte sempre as informações do rótulo de cada produto antes de usar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA / CONTATO ===================== -->
+  <section class="cta" id="contato">
+    <div class="container">
+      <span class="eyebrow" data-reveal>Fale com a gente</span>
+      <h2 data-reveal>Quer conhecer o catálogo completo?</h2>
+      <p data-reveal>Fale diretamente pelo WhatsApp para tirar dúvidas, ver disponibilidade e conhecer todos os sabores da linha Rapé Xingu e Zero Grau.</p>
+      <div class="cta-actions" data-reveal>
+        <a href="https://wa.me/5561981304906" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.1-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+          (61) 98130-4906
+        </a>
+        <a href="https://wa.me/5561995068153" target="_blank" rel="noopener" class="btn btn-outline">(61) 99506-8153</a>
+      </div>
+
+      <div class="contact-grid" data-reveal>
+        <div class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+          <div><span>E-mail</span><strong>tabacosxingu@gmail.com</strong></div>
+        </div>
+        <div class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 21c0-4-4-6-8-6s-8 2-8 6"/><circle cx="12" cy="7" r="4"/></svg>
+          <div><span>Atendimento</span><strong>Direto pelo WhatsApp</strong></div>
+        </div>
+        <div class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <div><span>Catálogo</span><strong>2023 · 20 sabores</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#topo" class="logo">
+          <img class="mark" src="assets/img/brand/logo-mark.png" alt="" />
+          <span class="logo-text">Rapé Xingu<span>O Rapé do Índio</span></span>
+        </a>
+        <p>Rapés artesanais feitos com ervas naturais e a tradição indígena em cada lata de 10g.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.5-3H13.5V8.3c0-.87.24-1.46 1.5-1.46H16.5V4.2C16.2 4.16 15.2 4 14 4c-2.5 0-4.2 1.5-4.2 4.3V10.5H7v3h2.8V21h3.7z"/></svg></a>
+          <a href="https://www.instagram.com/rapexingu.zerograu?stkn=MWxoN2pqNWFmaDJidQ==" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Catálogo</h4>
+        <ul>
+          <li><a href="#produtos">Linha Rapé Xingu</a></li>
+          <li><a href="#zerograu">Linha Zero Grau</a></li>
+          <li><a href="#historia">Nossa história</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5561981304906" target="_blank" rel="noopener">(61) 98130-4906</a></li>
+          <li><a href="https://wa.me/5561995068153" target="_blank" rel="noopener">(61) 99506-8153</a></li>
+          <li><a href="mailto:tabacosxingu@gmail.com">tabacosxingu@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><span>CNPJ: 34.565.939/0001-15</span></li>
+          <li><span>Catálogo 2023</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span><span class="badge18">18+</span>Venda proibida para menores de 18 anos.</span>
+      <span>© <span id="year"></span> Rapé Xingu. Todos os direitos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== CARRINHO ===================== -->
+<div class="cart-backdrop" id="cartBackdrop" hidden></div>
+
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Seu carrinho" hidden>
+  <div class="cart-head">
+    <h3>Seu pedido</h3>
+    <button class="cart-close" id="cartClose" aria-label="Fechar carrinho">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty" id="cartEmpty">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2l2.4 12.1a2 2 0 002 1.6h8.4a2 2 0 002-1.6L21 7H6"/></svg>
+      <p>Seu carrinho está vazio.<br>Escolha os sabores no catálogo ao lado.</p>
+    </div>
+    <ul class="cart-list" id="cartList"></ul>
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-total">
+      <div class="cart-total-row">
+        <span>Total de tubos <small>(12 latinhas cada)</small></span>
+        <strong id="cartTotalQty">0</strong>
+      </div>
+      <div class="cart-total-row cart-total-value">
+        <span>Valor estimado</span>
+        <strong id="cartTotalValue">R$ 0,00</strong>
+      </div>
+    </div>
+    <a class="btn btn-primary cart-checkout" id="cartCheckout" href="#" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.1-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.63-1.28 1.2-1.77 1.24-.45.05-1.02.07-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.92-2.2.24-.26.53-.32.7-.32.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.44-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.16.26.7 1.16 1.51 1.88 1.04.93 1.91 1.22 2.17 1.36.26.13.42.11.57-.07.16-.18.66-.77.84-1.03.18-.26.35-.22.6-.13.24.09 1.54.73 1.8.86.27.13.45.2.51.31.07.11.07.65-.15 1.28z"/></svg>
+      Finalizar pedido no WhatsApp
+    </a>
+    <p class="cart-note">Valor estimado com base na tabela atual — a loja confirma o total final e o frete pelo WhatsApp.</p>
+  </div>
+</aside>
+
+<a class="wa-float" href="https://wa.me/5561981304906" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.1-1.33A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.63-1.28 1.2-1.77 1.24-.45.05-1.02.07-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.92-2.2.24-.26.53-.32.7-.32.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.44-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.16.26.7 1.16 1.51 1.88 1.04.93 1.91 1.22 2.17 1.36.26.13.42.11.57-.07.16-.18.66-.77.84-1.03.18-.26.35-.22.6-.13.24.09 1.54.73 1.8.86.27.13.45.2.51.31.07.11.07.65-.15 1.28z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

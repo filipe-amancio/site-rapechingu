@@ -1,0 +1,10 @@
+# Fotos originais/brutas (já processadas e copiadas para assets/img)
+fotos/
+
+# Kit de skills do Claude Code (não faz parte do site)
+skills-kit-main/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
