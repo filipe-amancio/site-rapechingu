@@ -340,14 +340,20 @@
       <div class="section-head" data-reveal>
         <span class="eyebrow">Linha Zero Grau</span>
         <h2>Refrescância na veia</h2>
-        <p>Nove variações mentoladas para quem busca uma sensação gelada e intensa — do mentol puro aos sabores frutados.</p>
+        <p>Nove variações mentoladas para quem busca uma sensação gelada e intensa — do mentol puro aos sabores frutados, incluindo uma opção 100% livre de tabaco.</p>
+      </div>
+
+      <div class="line-tabs" role="tablist" aria-label="Filtrar catálogo Zero Grau">
+        <button class="line-tab active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+        <button class="line-tab" data-filter="tabaco" role="tab" aria-selected="false">Contém tabaco</button>
+        <button class="line-tab" data-filter="sem-tabaco" role="tab" aria-selected="false">Sem tabaco</button>
       </div>
 
       <p class="unit-note" data-reveal>Vendemos por <strong>tubo com 12 latinhas</strong> — a quantidade abaixo é o número de tubos, não de latinhas avulsas.</p>
 
-      <div class="product-grid">
+      <div class="product-grid" id="zeroGrauGrid">
 
-        <article class="product-card shop-item" data-name="Vick Ouro" data-line="Zero Grau" data-price="25" data-reveal>
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Vick Ouro" data-line="Zero Grau" data-price="25" data-reveal>
           <img src="assets/img/zerograu/zg-vick-ouro.png" alt="Zero Grau Vick Ouro" loading="lazy" />
           <div class="shop-bar">
             <div class="shop-info">
@@ -363,7 +369,7 @@
           </div>
         </article>
 
-        <article class="product-card shop-item" data-name="Super Vick" data-line="Zero Grau" data-price="22" data-reveal>
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Super Vick" data-line="Zero Grau" data-price="22" data-reveal>
           <img src="assets/img/zerograu/zg-super-vick.png" alt="Zero Grau Super Vick" loading="lazy" />
           <div class="shop-bar">
             <div class="shop-info">
@@ -379,23 +385,7 @@
           </div>
         </article>
 
-        <article class="product-card shop-item" data-name="Puro Vick" data-line="Zero Grau" data-price="22" data-reveal>
-          <img src="assets/img/zerograu/zg-puro-vick.png" alt="Zero Grau Puro Vick" loading="lazy" />
-          <div class="shop-bar">
-            <div class="shop-info">
-              <span class="shop-name">Puro Vick</span>
-              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
-            </div>
-            <div class="qty" data-qty="0">
-              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
-              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
-              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
-              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card shop-item" data-name="Canela c/ Menta" data-line="Zero Grau" data-price="22" data-reveal>
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Canela c/ Menta" data-line="Zero Grau" data-price="22" data-reveal>
           <img src="assets/img/zerograu/zg-canela-menta.png" alt="Zero Grau Canela com Menta" loading="lazy" />
           <div class="shop-bar">
             <div class="shop-info">
@@ -411,7 +401,7 @@
           </div>
         </article>
 
-        <article class="product-card shop-item" data-name="Super Chiclete" data-line="Zero Grau" data-price="22" data-reveal>
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Super Chiclete" data-line="Zero Grau" data-price="22" data-reveal>
           <img src="assets/img/zerograu/zg-super-chiclete.png" alt="Zero Grau Super Chiclete" loading="lazy" />
           <div class="shop-bar">
             <div class="shop-info">
@@ -427,7 +417,7 @@
           </div>
         </article>
 
-        <article class="product-card shop-item" data-name="Super Eucalipto" data-line="Zero Grau" data-price="22" data-reveal>
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Super Eucalipto" data-line="Zero Grau" data-price="22" data-reveal>
           <img src="assets/img/zerograu/zg-super-eucalipto.png" alt="Zero Grau Super Eucalipto" loading="lazy" />
           <div class="shop-bar">
             <div class="shop-info">
@@ -443,7 +433,7 @@
           </div>
         </article>
 
-        <article class="product-card shop-item" data-name="Morango c/ Menta" data-line="Zero Grau" data-price="22" data-reveal>
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Morango c/ Menta" data-line="Zero Grau" data-price="22" data-reveal>
           <img src="assets/img/zerograu/zg-morango-menta.png" alt="Zero Grau Morango com Menta" loading="lazy" />
           <div class="shop-bar">
             <div class="shop-info">
@@ -459,7 +449,7 @@
           </div>
         </article>
 
-        <article class="product-card shop-item" data-name="Pura Menta" data-line="Zero Grau" data-price="22" data-reveal>
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Pura Menta" data-line="Zero Grau" data-price="22" data-reveal>
           <img src="assets/img/zerograu/zg-pura-menta.png" alt="Zero Grau Pura Menta" loading="lazy" />
           <div class="shop-bar">
             <div class="shop-info">
@@ -475,11 +465,27 @@
           </div>
         </article>
 
-        <article class="product-card shop-item" data-name="Super Mentolado" data-line="Zero Grau" data-price="22" data-reveal>
+        <article class="product-card shop-item" data-cat="tabaco" data-name="Super Mentolado" data-line="Zero Grau" data-price="22" data-reveal>
           <img src="assets/img/zerograu/zg-super-mentolado.png" alt="Zero Grau Super Mentolado" loading="lazy" />
           <div class="shop-bar">
             <div class="shop-info">
               <span class="shop-name">Super Mentolado</span>
+              <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
+            </div>
+            <div class="qty" data-qty="0">
+              <button type="button" class="qty-btn" data-action="dec" aria-label="Diminuir tubo">−</button>
+              <input type="number" class="qty-input" min="0" step="1" inputmode="numeric" value="0" aria-label="Quantidade de tubos" />
+              <button type="button" class="qty-btn" data-action="inc" aria-label="Adicionar 1 tubo">+</button>
+              <button type="button" class="qty-btn qty-bulk" data-action="inc10" aria-label="Adicionar 10 tubos">+10</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card shop-item" data-cat="sem-tabaco" data-name="Puro Vick" data-line="Zero Grau" data-price="22" data-reveal>
+          <img src="assets/img/zerograu/zg-puro-vick.png" alt="Zero Grau Puro Vick, sem tabaco" loading="lazy" />
+          <div class="shop-bar">
+            <div class="shop-info">
+              <span class="shop-name">Puro Vick</span>
               <span class="shop-price">R$ 22 <small>/ tubo c/ 12</small></span>
             </div>
             <div class="qty" data-qty="0">
@@ -522,7 +528,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9L2.5 17.5A1.5 1.5 0 003.8 20h16.4a1.5 1.5 0 001.3-2.5L13.7 3.9a1.5 1.5 0 00-2.6 0z"/></svg>
         <div>
           <h3>Uso consciente e responsável</h3>
-          <p>Venda proibida para menores de 18 anos. A maior parte dos sabores desta linha contém tabaco — a exceção é a Imburana Pura. Consulte sempre as informações do rótulo de cada produto antes de usar.</p>
+          <p>Venda proibida para menores de 18 anos. A maior parte dos sabores contém tabaco — as exceções são a Imburana Pura e o Puro Vick, 100% livres de tabaco. Consulte sempre as informações do rótulo de cada produto antes de usar.</p>
         </div>
       </div>
     </div>

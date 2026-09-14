@@ -81,23 +81,33 @@
     });
   }
 
-  /* ---------- Product filter tabs ---------- */
-  var tabs = document.querySelectorAll(".line-tab");
-  var cards = document.querySelectorAll("#productGrid .product-card");
+  /* ---------- Product filter tabs ----------
+     Cada catálogo (Rapé Xingu, Zero Grau) tem seu próprio grupo de abas,
+     que filtra só a grade logo em seguida — os grupos não se afetam. */
+  document.querySelectorAll(".line-tabs").forEach(function (tabGroup) {
+    var grid = tabGroup.nextElementSibling;
+    while (grid && !grid.classList.contains("product-grid")) {
+      grid = grid.nextElementSibling;
+    }
+    if (!grid) return;
 
-  tabs.forEach(function (tab) {
-    tab.addEventListener("click", function () {
-      tabs.forEach(function (t) {
-        t.classList.remove("active");
-        t.setAttribute("aria-selected", "false");
-      });
-      tab.classList.add("active");
-      tab.setAttribute("aria-selected", "true");
+    var tabs = tabGroup.querySelectorAll(".line-tab");
+    var cards = grid.querySelectorAll(".product-card");
 
-      var filter = tab.getAttribute("data-filter");
-      cards.forEach(function (card) {
-        var match = filter === "all" || card.getAttribute("data-cat") === filter;
-        card.style.display = match ? "" : "none";
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        tabs.forEach(function (t) {
+          t.classList.remove("active");
+          t.setAttribute("aria-selected", "false");
+        });
+        tab.classList.add("active");
+        tab.setAttribute("aria-selected", "true");
+
+        var filter = tab.getAttribute("data-filter");
+        cards.forEach(function (card) {
+          var match = filter === "all" || card.getAttribute("data-cat") === filter;
+          card.style.display = match ? "" : "none";
+        });
       });
     });
   });
